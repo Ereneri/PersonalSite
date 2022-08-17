@@ -1,0 +1,113 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+body, html {
+    height: 100%;
+    word-spacing: 0.10em;
+    line-height: calc(1ex / 0.32);
+    background-color: hsl(0, 0%, 96%);
+}
+
+.profile-picture-container {
+    width: 9rem;
+    margin-right: 1rem;
+}
+
+.profile-bio {
+    width: auto;
+    margin-top: 1em;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.college-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-img {
+    background-image: url('profilehero.jpg');
+    background-size: auto;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-hero {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.noti {
+    animation-name: hide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    position: relative;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: inherit;
+        line-height: 100%;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+}
+
+.project-picture-container {
+    width: 9rem;
+    margin-right: 2ex;
+}
+
+.project-container {
+    padding: 2ex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.project-container:hover {
+    background-color: hsl(0, 0%, 88%);
+}
+
+.project-disc {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+a { color: inherit; } 
+
+.subtitle {
+    line-height: calc(1ex / 0.32);
+}
