@@ -117,11 +117,6 @@ body {
     flex-direction: column;
 }
 
-.block {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
 a { color: inherit; } 
 
 .subtitle {
