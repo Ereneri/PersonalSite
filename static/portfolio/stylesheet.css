@@ -1,10 +1,28 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-body, html {
+html {
     height: 100%;
     word-spacing: 0.10em;
     line-height: calc(1ex / 0.32);
-    background-color: hsl(0, 0%, 96%);
+    background-color: #dbdbdb!important;
+}
+
+body {
+    background-color: #f5f5f5!important;
+}
+
+.is-ai {
+    color: #fff!important;
+    background-color: orangered!important;
+}
+
+.is-cs50 {
+    color: #fff!important;
+    background-color: rgb(94, 28, 33)!important;
+}
+
+.tech-used {
+    color: hsl(204, 86%, 53%)!important;
 }
 
 .profile-picture-container {
@@ -65,12 +83,9 @@ body, html {
 
 @keyframes hide {
     0% {
-        opacity: 1;
-        height: inherit;
         line-height: 100%;
     }
     100% {
-        opacity: 0;
         height: 0px;
         line-height: 0px;
         margin-bottom: 0px;
@@ -90,6 +105,7 @@ body, html {
     flex-direction: row;
     align-items: center;
     transition: background-color 0.2s ease-in-out;
+    background-color: #f5f5f5;
 }
 
 .project-container:hover {
