@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function showNotification() {
-    var notification = `    <div class="is-rounded">
-    <div class="notification is-warning noti">
-        <button class="delete"></button>
-        Thank you for your interest in my portfolio! I am currently looking for an internship or co-op opportunity, more info on my <a href="https://www.linkedin.com/in/eren-erisgen/">LinkedIn</a>.
-    </div>
-</div>
-`;
-    document.getElementById('notification').innerHTML = notification;
-}
+// function showNotification() {
+//     var notification = `    <div class="is-rounded">
+//     <div class="notification is-warning noti">
+//         <button class="delete"></button>
+//         Thank you for your interest in my portfolio! I am currently looking for an internship or co-op opportunity, more info on my <a href="https://www.linkedin.com/in/eren-erisgen/">LinkedIn</a>.
+//     </div>
+// </div>
+// `;
+//     document.getElementById('notification').innerHTML = notification;
+// }
