@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Check storage if they have already deleted the notification
-    if (sessionStorage.getItem('notification') != 'deleted') {
-        showNotification();
-    }
+    // if (sessionStorage.getItem('notification') != 'deleted') {
+    //     showNotification();
+    // }
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
