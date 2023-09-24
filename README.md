@@ -2,7 +2,7 @@
 My Personal Website\
 v0.0.6\
 released 8/16/2022\
-updated 10/14/2022
+updated 9/24/2023
 
 # Pages
 
