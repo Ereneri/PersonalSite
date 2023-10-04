@@ -1,6 +1,6 @@
 # PersonalSite
 My Personal Website\
-v0.0.6\
+v0.0.7\
 released 8/16/2022\
 updated 9/24/2023
 
