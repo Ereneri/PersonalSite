@@ -1,8 +1,8 @@
 # PersonalSite
 My Personal Website\
-v0.0.7\
+v0.0.8\
 released 8/16/2022\
-updated 10/03/2023
+updated 12/15/2023
 
 # Pages
 
@@ -11,9 +11,6 @@ Landing page that has a basic hero image and welcome text below
 
 ## Projects.html
 Projects page that has a list of all my completed and ongoing projects with links to github repos
-
-## Experiments.html
-Experiments page has a list of most of my experiments in a new technology or language
 
 ## About.html
 About me page has a short biography about me and below has a list of my education/certificates

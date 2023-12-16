@@ -42,3 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // `;
 //     document.getElementById('notification').innerHTML = notification;
 // }
+
+window.addEventListener('scroll', function() {
+    const scrollPos = window.scrollY;
+    const heroImages = document.querySelectorAll('.hero-img');
+    heroImages.forEach(function(hero) {
+      hero.style.filter = `brightness(${1 - scrollPos/500})`;
+      const offsetY = scrollPos * .2;
+      hero.style.backgroundPositionY = `calc(50% + ${offsetY}px)`
+    });
+});
+
+
