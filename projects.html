@@ -1,172 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" href="static/portfolio/stylesheet.css">
-        <script src="static/portfolio/portfolio.js"></script>
-    </head>
-    <body>
-        <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-          
-          <div id="navbar-menu" class="navbar-menu">
-            <div class="navbar-start">
-              <a href="index.html" class="navbar-item">
-                Home
-              </a>
-              
-              <a href="projects.html"class="navbar-item">
-                Projects
-              </a>
 
-              <!-- <a href="experiments.html"class="navbar-item">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="static/portfolio/stylesheet.css">
+    <script src="static/portfolio/portfolio.js"></script>
+</head>
+
+<body>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+
+        <div id="navbar-menu" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">
+                    Home
+                </a>
+
+                <a href="projects.html" class="navbar-item">
+                    Projects
+                </a>
+
+                <!-- <a href="experiments.html"class="navbar-item">
                 Experiments
               </a> -->
-              
-              <a href="about.html" class="navbar-item">
-                About
-              </a>
-              
+
+                <a href="about.html" class="navbar-item">
+                    About
+                </a>
+
             </div>
-          </div>
-          </nav>
-        <div class="body">
-            <!-- <div id="notification"></div>
-            <div style="margin: 0; border-radius: 0;" class="notification is-danger">
-                This page is still under construction, so they only link to their Github repositories at this time. Sorry for the inconvenience.
-            </div> -->
-            <a href="drone.html">
-                <div class="project-container">
-                    <div class="project-picture-container">
-                        <figure class="image">
-                            <img class="is-rounded" src="static/Drone/droneThumb.png" alt="Image of Drone">
-                        </figure>
-                    </div>
-                    <div class="project-disc">
-                        <div class="block">
-                            <h1 class="title">Drone Simulation</h1>
-                            <h2 class="subtitle">A drone simulation for package delivery around The University of Minnesota, Twin Cities Campus</h2>
-                        </div>
-                        <div class="block">
-                            <div class="tech-used">
-                                #C++ #Docker #DesignPatterns
-                            </div>
-                            <div>
-                                <i>Last Updated: <strong>December 15, 2023</strong></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="planet.html">
-                <div class="project-container">
-                    <div class="project-picture-container">
-                        <figure class="image">
-                            <img class="is-rounded" src="static/planet/Earth.png" alt="Image of 8-bit Spaceship">
-                        </figure>
-                    </div>
-                    <div class="project-disc">
-                        <div class="block">
-                            <h1 class="title">PlaneTalk</h1>
-                            <h2 class="subtitle">GPT-3.5 powered astronmoy education tool built using React and Django</h2>
-                        </div>
-                        <div class="block">
-                            <div class="tech-used">
-                                #React #GPT3.5 #Django #Python #JavaScript #HTML #CSS
-                            </div>
-                            <div>
-                                <i>Last Updated: <strong>September 24, 2023</strong></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="otd.html">
-                <div class="project-container">
-                    <div class="project-picture-container">
-                        <figure class="image">
-                            <img class="is-rounded" src="static/OurTodos/otdThumb.png" alt="Black background with text 'WIP'">
-                        </figure>
-                    </div>
-                    <div class="project-disc">
-                        <div class="block">
-                            <h1 class="title">OurToDos</h1>
-                            <h2 class="subtitle">A collaborative To Do list web app</h2>
-                        </div>
-                        <div class="block">
-                            <div class="tech-used">
-                                #Python, #Django, #Bootstrap, #HTML, #CSS, #JavaScript
-                            </div>
-                            <div>
-                                <i>Last Updated: <strong>July 11, 2022</strong></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="spacegame.html">
-                <div class="project-container">
-                    <div class="project-picture-container">
-                        <figure class="image">
-                            <img class="is-rounded" src="static/SpaceGame/gameThumb.png" alt="Image of 8-bit Spaceship">
-                        </figure>
-                    </div>
-                    <div class="project-disc">
-                        <div class="block">
-                            <h1 class="title">SpaceGame</h1>
-                            <h2 class="subtitle">A 8-bit arcade style spaceship shooter built in Java</h2>
-                        </div>
-                        <div class="block">
-                            <div class="tech-used">
-                                #Java
-                            </div>
-                            <div>
-                                <i>Last Updated: <strong>June 7, 2022</strong></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://github.com/Ereneri/firstCommit">
-                <div class="project-container">
-                    <div class="project-picture-container">
-                        <figure class="image">
-                            <img class="is-rounded" src="static/work-in-progress.png" alt="Orange background with text 'WIP'">
-                        </figure>
-                    </div>
-                    <div class="project-disc">
-                        <div class="block">
-                            <h1 class="title">Personal Website</h1>
-                            <h2 class="subtitle">My Personal website</h2>
-                        </div>
-                        <div class="block">
-                            <div class="tech-used">
-                                #Python, #Django, #SQL
-                            </div>
-                            <div>
-                                <i>Last Updated: <strong>Ongoing</strong></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        
         </div>
-    </body>
-    <footer class="footer has-background-grey-lighter">
-      <div class="content has-text-centered">
+    </nav>
+    <div class="body">
+        <div id="notification"></div>
+        <section class="hero is-black is-8 hero-img">
+            <div class="hero-body levels">
+                <div class="level-item">
+                    <h1 style="color: white" class="shadow title is-1">Projects</h1>
+                </div>
+            </div>
+        </section>
+        <a href="flappybird.html">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/flappybird/flappybird.jpg"
+                            alt="Green background with a small yellow 8-bit bird">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">NEAT Flappy Bird</h1>
+                        <h2 class="subtitle profect-page-desc">Fully working Flappy Bird Game built in Java with NEAT AI</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #Java #Artifical Intelligence
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>On-Going</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="2048.html">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/2048/2048.png"
+                            alt="Yellow Background with White text of 2048">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">2048 Solver</h1>
+                        <h2 class="subtitle profect-page-desc">Academic paper on comparing three common search algorithms to solve 2048
+                            Game</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #C++ #C #R #Artifical Intelligence
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>April 29, 2024</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="drone.html">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/Drone/droneThumb.png" alt="Image of Drone">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">Drone Simulation</h1>
+                        <h2 class="subtitle profect-page-desc">A drone simulation for package delivery around The University of Minnesota,
+                            Twin Cities Campus</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #C++ #Docker #DesignPatterns
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>December 15, 2023</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="planet.html">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/planet/Earth.png" alt="Image of 8-bit Spaceship">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">PlaneTalk</h1>
+                        <h2 class="subtitle profect-page-desc">GPT-3.5 powered astronmoy education tool built using React and Django</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #React #Django #Python #JavaScript
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>September 24, 2023</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="otd.html">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/OurTodos/otdThumb.png"
+                            alt="Black background with text 'WIP'">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">OurToDos</h1>
+                        <h2 class="subtitle profect-page-desc">A collaborative To Do list web app</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #Python, #Django, #Bootstrap, #JavaScript
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>July 11, 2022</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="spacegame.html">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/SpaceGame/gameThumb.png" alt="Image of 8-bit Spaceship">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">SpaceGame</h1>
+                        <h2 class="subtitle profect-page-desc">A 8-bit arcade style spaceship shooter built in Java</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #Java
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>June 7, 2022</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://github.com/Ereneri/PersonalSite">
+            <div class="project-container">
+                <div class="project-picture-container">
+                    <figure class="image">
+                        <img class="is-rounded" src="static/work-in-progress.png"
+                            alt="Orange background with text 'WIP'">
+                    </figure>
+                </div>
+                <div class="project-disc">
+                    <div>
+                        <h1 class="title project-page-name">Personal Website</h1>
+                        <h2 class="subtitle profect-page-desc">My Personal website</h2>
+                    </div>
+                    <div>
+                        <div class="tech-used">
+                            #Python, #Django, #JavaScript
+                        </div>
+                        <div>
+                            <i>Last Updated: <strong>Ongoing</strong></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</body>
+<footer class="footer has-background-grey-lighter">
+    <div class="content has-text-centered">
         <p>
-          <a href="index.html">home</a> | <a href="projects.html">projects</a> | <a href="about.html">about</a>
+            <a href="index.html">home</a> | <a href="projects.html">projects</a> | <a href="about.html">about</a> | <a
+                href="mailto:ederisgen@gmail.com">contact</a>
         </p>
-      </div>
-    </footer>
+    </div>
+</footer>
+
 </html>

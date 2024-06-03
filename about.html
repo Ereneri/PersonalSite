@@ -1,141 +1,267 @@
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" href="static/portfolio/stylesheet.css">
-        <script src="static/portfolio/portfolio.js"></script>
-    </head>
-    <body>
-        <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="static/portfolio/stylesheet.css">
+    <script src="static/portfolio/portfolio.js"></script>
+</head>
+
+<body>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
-          
-          <div id="navbar-menu" class="navbar-menu">
+        </a>
+
+        <div id="navbar-menu" class="navbar-menu">
             <div class="navbar-start">
-              <a href="index.html" class="navbar-item">
-                Home
-              </a>
-              
-              <a href="projects.html"class="navbar-item">
-                Projects
-              </a>
-              <!-- <a href="experiments.html"class="navbar-item">
+                <a href="index.html" class="navbar-item">
+                    Home
+                </a>
+
+                <a href="projects.html" class="navbar-item">
+                    Projects
+                </a>
+                <!-- <a href="experiments.html"class="navbar-item">
                 Experiments
               </a> -->
-              
-              <a href="about.html" class="navbar-item">
-                About
-              </a>
-              
+
+                <a href="about.html" class="navbar-item">
+                    About
+                </a>
+
             </div>
-          </div>
-        </nav>
-        <div class="body">
-            <div id="notification"></div>
-            <div id="bio" class="profile-container">
-                <div class="profile-hero hero-img">
+        </div>
+    </nav>
+    <div class="body">
+        <div id="notification"></div>
+        <section class="hero is-black hero-img">
+            <div class="hero-body levels">
+                <div class="level-item">
                     <div class="profile-picture-container">
                         <figure class="image">
                             <img class="is-rounded" src="static/portfolio/profilepicture.JPG" alt="Photo of Eren">
                         </figure>
                     </div>
-                    <div>
-                        <h1 style="color: white" class="shadow title is-2">Eren Erisgen</h1>
-                        <h2 style="color: white" class="shadow subtitle is-4">Future Software Engineer</h2>
-                    </div>
+                    <p class="title is-1 has-text-weight-bold">Eren Erisgen</p>
                 </div>
+            </div>
+        </section>
+        <div class="page">
+            <div id="bio" class="profile-container">
                 <div class="container profile-bio">
-                    <h1 class="title is-3">About Me</h1>    
-                    <div class="block">
-                        Minnesota studying Computer Science. While at the University of Minnesota, I have studied topics from algorithm design to software engineering principles and patterns. I have a strong background in Java, C++, Python, and JavaScript-–all of which I employed in various projects you can explore on the projects page. Outside of academic and industry experience, I have an infatuation for hackathons, attending both Minnehack last January and HackUIowa last September. On this site, you can find some of my projects and links to the source code. These projects have given me a lot of experience working with new technologies and concepts as well as working in small teams. After graduation, I plan to become a software engineer within the fintech sector. To follow along with my software engineering journey please feel free to bookmark this page or follow me on<a class="has-text-link" href="https://github.com/Ereneri">GitHub</a>. Additionally, you can connect with me on <a class="has-text-link" href="https://www.linkedin.com/in/eren-erisgen/">LinkedIn</a>.
-                    </div>
-                    <div class="block">
-                        <strong>Languages:</strong> Java, Python, Bash, SQLite3, JavaScript, C++, C, OCaml, ASMx86
-                    </div>
-                    <div class="block">
-                        <strong>Technologies:</strong> GitHub, Git, Django, Flask, VS Code, TensorFlow, Bootstrap, Docker, HTML, CSS
-                    </div>
-                </div>
-            </div>
-        
-            <br>
-            <div class="container">
-                <h1 class="title is-3">Work Experience</h1>    
-                <div id="college" class="container college-container">
-                    <div>
-                        <figure class="image is-64x64">
-                            <img class="is-rounded" src="static/thrivent.jpeg" alt="University of Minnesota Logo">
-                        </figure>
+                    <h1 class="title is-3">About Me</h1>
+                    <div class="content">
+                        I am currently a student at the University of Minnesota, studying Computer Science. During my
+                        time at the university, I have gained knowledge in various areas such as algorithm design,
+                        software engineering principles, and patterns. I have a strong background in Java, C++, Python,
+                        and JavaScript, which I have applied in numerous projects that you can explore on the projects
+                        page. Apart from my academic and industry experience, I have a passion for hackathons and have
+                        participated in events like Minnehack and HackUIowa. On this website, you can find some of my
+                        projects and links to their source code. These projects have provided me with valuable
+                        experience in working with new technologies and collaborating in small teams. After graduation,
+                        my goal is to work as a software engineer in the fintech sector. To stay updated with my
+                        software engineering journey, you can bookmark this page or follow me on <a
+                            class="has-text-link" href="https://github.com/Ereneri">GitHub</a>. You can also connect
+                        with me on <a class="has-text-link"
+                            href="https://www.linkedin.com/in/eren-erisgen/">LinkedIn</a>.
                     </div>
                     <div>
-                        <h1 style="margin-left: 1rem;" class="title is-5">Java Developer<strong style="font-weight: 400;"> (Summer 2023) </strong></h1>
-                        <h2 style="margin-left: 1rem;" class="subtitle is-5">Thrivent</h2>
+                        <strong>Languages:</strong> Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, Bash,
+                        Swift, ASMx86, OCaml
+                        <br>
+                        <strong>Technologies:</strong> Django, Flask, React, Node.js, Django, AWS Lambda, AWS DyanmoDB,
+                        Maven, Postgres, Docker
+                        <br>
+                        <strong>Tools:</strong> Git, Docker, Jira, Slack, IntelliJ, VSCode, Xcode, VIM
                     </div>
                 </div>
-            </div>
 
-            <br>
-        
-            <div class="container" style="margin-bottom: 5rem">
-                <h1 class="title is-3">Education and Certifications</h1>    
-                <div id="college" class="container college-container">
-                    <div>
-                        <figure class="image is-64x64">
-                            <img class="is-rounded" src="static/portfolio/umn.jpeg" alt="University of Minnesota Logo">
-                        </figure>
+                <br>
+                <div class="container">
+                    <br>
+                    <h1 class="title is-3">Work Experience</h1>
+                    <div class="container">
+                        <div id="work1" class="exp-container">
+                            <div class="image-container">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded is-64x64" src="static/tbg.jpg" alt="img">
+                                </figure>
+                            </div>
+                            <div class="desc-container">
+                                <div>
+                                    <div class="title-date-container">
+                                        <div>
+                                            <h1 class="title is-5">The Bernard Group</h1>
+                                            <h2 class="subtitle">Intern, Software Engineer</h2>
+                                        </div>
+                                        <div>
+                                            <h1 class="is-t subtitle">Summer 2024</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="better-lists">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="work0" class="exp-container">
+                            <div class="image-container">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded is-64x64" src="static/thrivent.jpeg" alt="img">
+                                </figure>
+                            </div>
+                            <div class="desc-container">
+                                <div>
+                                    <div class="title-date-container">
+                                        <div>
+                                            <h1 class="title is-5">Thrivent Financial</h1>
+                                            <h2 class="subtitle is-5">Intern, Java Developer</h2>
+                                        </div>
+                                        <div>
+                                            <h1 class="subtitle">Summer 2023</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="better-lists">
+                                        <li>Resolved a two-year-old bug and upgraded two existing production processes
+                                        </li>
+                                        <li>Implemented a JavaScript design that decreased execution time by up to 80%
+                                        </li>
+                                        <li>Devised a bot to validate a process with upwards of 17,000 daily
+                                            transactions</li>
+                                        <li>Designed an alert that notified the team of low work volume, eliminating the
+                                            need for 6 daily manual checks</li>
+                                        <li>Successfully developed production automation in 20% less time than estimated
+                                        </li>
+                                        <li>Learned the software development pipeline, Agile workflow, and incident
+                                            ticketing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h1 style="margin-left: 1rem;" class="title is-5">The University of Minnesota, Twin Cities <strong style="font-weight: 400;"> Class of 2025</strong></h1>
-                        <h2 style="margin-left: 1.1rem;" class="subtitle is-5">Bachelor of Science: Computer Science</h2>
-                    </div>
-                </div>
-                <div id="college" class="container college-container">
-                    <div>
-                        <figure class="image is-64x64">
-                            <img class="is-rounded" src="static/portfolio/Harvard_x_logo.png" alt="Harvard X logo">
-                        </figure>
-                    </div>
-                    <div>
-                        <h1 style="margin-left: 1rem;" class="title is-5">HarvardX - Harvard University</h1>
-                        <h2 style="margin-left: 1.1rem;" class="subtitle is-5">CS50’s Introduction to Computer Science</h2>
-                    </div>
-                </div>
-                <div id="college" class="container college-container">
-                    <div>
-                        <figure class="image is-64x64">
-                            <img class="is-rounded" src="static/portfolio/Harvard_x_logo.png" alt="Harvard X logo">
-                        </figure>
-                    </div>
-                    <div>
-                        <h1 style="margin-left: 1rem;" class="title is-5">HarvardX - Harvard University</h1>
-                        <h2 style="margin-left: 1.1rem;" class="subtitle is-5">CS50’s Web Programming with Python and JavaScript</h2>
-                    </div>
-                </div>
-                <div id="college" class="container college-container">
-                    <div>
-                        <figure class="image is-64x64">
-                            <img class="is-rounded" src="static/portfolio/Harvard_x_logo.png" alt="Harvard X logo">
-                        </figure>
-                    </div>
-                    <div>
-                        <h1 style="margin-left: 1rem;" class="title is-5">HarvardX - Harvard University</h1>
-                        <h2 style="margin-left: 1.1rem;" class="subtitle is-5">CS50’s Introduction to Artificial Intelligence with Python</h2>
+
+                    <br>
+
+                    <div class="container" style="margin-bottom: 5rem">
+
+                        <h1 class="title is-3">Education and Certifications</h1>
+                        <div>
+                            <div id="college" class="exp-container">
+                                <div class="image-container">
+                                    <figure class="image is-64x64">
+                                        <img class="is-rounded is-64x64" src="static/portfolio/umn.jpeg" alt="img">
+                                    </figure>
+                                </div>
+                                <div class="desc-container">
+                                    <div>
+                                        <div class="title-date-container">
+                                            <div>
+                                                <h1 class="title is-5">University Of Minnesota, Twin Cities</h1>
+                                                <h2 class="subtitle is-5">Bachelor of Science in Computer Science</h2>
+                                            </div>
+                                            <div>
+                                                <h1 class="subtitle" style="margin-bottom: 0;">Graudate–May 2025</h1>
+                                                <h1 class="is-3 gpa">GPA: 3.9/4.0</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul class="better-lists-nobullet">
+                                            <li class="is-3"><em>College of Science and Engineering</em></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="hx2" class="exp-container">
+                                <div class="image-container">
+                                    <figure class="image is-64x64">
+                                        <img class="is-rounded is-64x64" src="static/portfolio/Harvard_x_logo.png"
+                                            alt="img">
+                                    </figure>
+                                </div>
+                                <div class="desc-container">
+                                    <div>
+                                        <div class="title-date-container">
+                                            <div>
+                                                <h1 class="title is-5">HarvardX - Harvard University</h1>
+                                                <h2 class="subtitle is-5">CS50’s Introduction to Artificial Intelligence
+                                                    with Python</h2>
+                                            </div>
+                                            <div>
+                                                <h1 class="subtitle">Aug. 2022</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="hx1" class="exp-container">
+                                <div class="image-container">
+                                    <figure class="image is-64x64">
+                                        <img class="is-rounded is-64x64" src="static/portfolio/Harvard_x_logo.png"
+                                            alt="img">
+                                    </figure>
+                                </div>
+                                <div class="desc-container">
+                                    <div>
+                                        <div class="title-date-container">
+                                            <div>
+                                                <h1 class="title is-5">HarvardX - Harvard University</h1>
+                                                <h2 class="subtitle is-5">CS50’s Web Programming with Python and
+                                                    JavaScript<< /h2>
+                                            </div>
+                                            <div>
+                                                <h1 class="subtitle">Jul. 2022</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="hx0" class="exp-container">
+                                <div class="image-container">
+                                    <figure class="image is-64x64">
+                                        <img class="is-rounded is-64x64" src="static/portfolio/Harvard_x_logo.png"
+                                            alt="img">
+                                    </figure>
+                                </div>
+                                <div class="desc-container">
+                                    <div>
+                                        <div class="title-date-container">
+                                            <div>
+                                                <h1 class="title is-5">HarvardX - Harvard University</h1>
+                                                <h2 class="subtitle is-5">CS50’s Introduction to Computer Science</h2>
+                                            </div>
+                                            <div>
+                                                <h1 class="subtitle">Feb. 2022</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        
         </div>
-    </body>
-    <footer class="footer has-background-grey-lighter">
-      <div class="content has-text-centered">
+</body>
+<footer class="footer has-background-grey-lighter">
+    <div class="content has-text-centered">
         <p>
-          <a href="index.html">home</a> | <a href="projects.html">projects</a> | <a href="about.html">about</a>
+            <a href="index.html">home</a> | <a href="projects.html">projects</a> | <a href="about.html">about</a> | <a
+                href="mailto:ederisgen@gmail.com">contact</a>
         </p>
-      </div>
-    </footer>
+    </div>
+</footer>
+
 </html>
