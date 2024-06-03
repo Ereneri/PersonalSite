@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="static/portfolio/stylesheet.css">
+  <script src="static/portfolio/portfolio.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          Home
+        </a>
+
+        <a href="projects.html" class="navbar-item">
+          Projects
+        </a>
+        <a href="about.html" class="navbar-item">
+          About
+        </a>
+
+      </div>
+    </div>
+  </nav>
+  <div class="body">
+    <div id="notification"></div>
+    <section class="hero is-black hero-img">
+      <div class="hero-body levels">
+        <div class="level-item">
+          <div class="profile-picture-container">
+            <figure class="image">
+              <img class="is-rounded" src="static/flappybird/flappybird.jpg"
+                alt="Green background with a small yellow 8-bit bird">
+            </figure>
+          </div>
+          <h1 class="title project-title">NEAT Flappy Bird</h1>
+        </div>
+      </div>
+    </section>
+    <div class="page">
+      <div class="container profile-bio">
+        <span><a style="color: hsl(204, 86%, 53%)!important;"
+            href="https://github.com/Ereneri/java-flappy-bird">GitHub</a> | Last Updated
+          <strong>On-Going</strong></span>
+        <h1 class="title is-3">Flappy Bird</h1>
+        <div>
+          Built a fully working Flappy Bird clone in Java along with a neural network that learns to play the game. The
+          game was built in ONLY 2 days during finals week as a fun quick project. The neural network was built using a
+          genetic algorithm, called NEAT, which stands for NeuroEvolution of Augmenting Topologies. The neural network
+          was
+          trained using a genetic algorithm to play the game. I built the NEAT implementation from scratch following the
+          original white paper and various online resoruces. To check it out, check my github link above. There are two
+          versions of the game, one where the bird is controlled by the player and the other where the bird is
+          controlled
+          by the neural network, the latter is still in-progress.
+          <div style="margin-top: 1rem" class="tech-used">
+            #Java #Artifical Intelligence
+          </div>
+        </div>
+        <br>
+
+        <div class="container">
+          <h1 class="title">Photos and Video</h1>
+          <div class="columns">
+            <div class="column is-4">
+              <video controls>
+                <source src="/static/flappybird/flappybird 2.mov">.
+              </video>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="/static/flappybird/ReadyScreen.png" alt="Flappy bird ready to play screen">
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="/static/flappybird/gameplay.png" alt="FlappyBird Gameplay">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<footer class="footer has-background-grey-lighter">
+  <div class="content has-text-centered">
+    <p>
+      <a href="index.html">home</a> | <a href="projects.html">projects</a> | <a href="about.html">about</a> | <a
+        href="mailto:ederisgen@gmail.com">contact</a>
+    </p>
+  </div>
+</footer>
