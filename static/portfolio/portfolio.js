@@ -17,28 +17,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
-        // get the notification element
-        const $notification = $delete.parentNode;
+    // (document.querySelectorAll('.message-header .delete') || []).forEach(($delete) => {
+    //     // get the notification element
+    //     const $notification = $delete.parentNode;
+    //     console.log($notification.parentElement)
     
-        // add a click event to the delete button
-        $delete.addEventListener('click', () => {
-            sessionStorage.setItem('notification', 'deleted');
-            $notification.style.animationPlayState = 'running';
-            $notification.addEventListener('animationend', () => {
-                $notification.parentNode.remove($notification);
-            });
-        });
-    });
+    //     // add a click event to the delete button
+    //     $delete.addEventListener('click', () => {
+    //         console.log('clicked');
+    //         $notification.parentElement.remove($notification);
+    //         sessionStorage.setItem('notification', 'deleted');
+    //     });
+    // });
 });
 
 // function showNotification() {
-//     var notification = `    <div class="is-rounded">
-//     <div class="notification is-warning noti">
-//         <button class="delete"></button>
-//         Thank you for your interest in my portfolio! I am currently looking for an internship or co-op opportunity, more info on my <a href="https://www.linkedin.com/in/eren-erisgen/">LinkedIn</a>.
+//     var notification = `
+//     <div class="notificaion message is-info">
+//         <div class="message-header">
+//             <p>Thanks for your interest!</p>
+//             <button class="delete"></button>
+//         </div>
+//         <div class="message-body">
+//         Howdy! Thanks for visiting, I am currently looking for new opporunties. If you would like to help me with my next adventure, please connect with me on <a href="https://www.linkedin.com/in/eren-erisgen/">LinkedIn</a>
+//         </div>
 //     </div>
-// </div>
 // `;
 //     document.getElementById('notification').innerHTML = notification;
 // }

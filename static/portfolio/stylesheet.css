@@ -4,22 +4,12 @@ html {
     height: 100%;
     word-spacing: 0.10em;
     line-height: calc(1ex / 0.32);
-    background-color: #dbdbdb!important;
+    /* background-color: #dbdbdb!important; */
 }
 
 body {
     padding-top: 3.25rem;
-    background-color: #f5f5f5!important;
-}
-
-.is-ai {
-    color: #fff!important;
-    background-color: orangered!important;
-}
-
-.is-cs50 {
-    color: #fff!important;
-    background-color: rgb(94, 28, 33)!important;
+    /* background-color: #f5f5f5!important; */
 }
 
 .tech-used {
@@ -28,12 +18,13 @@ body {
 
 .profile-picture-container {
     width: 9rem;
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
 
 .profile-bio {
     width: auto;
     margin-top: 1em;
+    font-size: 1.25rem;
 }
 
 .profile-container {
@@ -69,34 +60,13 @@ body {
     height: 10rem;
 }
 
-.shadow {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
-
-.noti {
-    animation-name: hide;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    position: relative;
-}
-
-@keyframes hide {
-    0% {
-        line-height: 100%;
-    }
-    100% {
-        height: 0px;
-        line-height: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
-}
-
 .project-picture-container {
     width: 10rem;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .project-container {
@@ -105,24 +75,35 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-content: flex-start;
-    align-items: center;
     transition: background-color 0.2s ease-in-out;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     justify-content: space-evenly
 }
 
 .project-container:hover {
-    background-color: hsl(0, 0%, 92%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+.project-container:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-container:not(:hover) {
+    transition: transform 0.2s ease-in-out; 
+    transform: scale(1);
 }
 
 .project-disc {
     width: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 9rem;
 }
 
-a { color: inherit; } 
+a { color: inherit; }
 
 .subtitle {
     line-height: calc(1ex / 0.32);
@@ -177,3 +158,269 @@ a { color: inherit; }
     align-items: center;
     justify-content: center;
 }
+
+.home-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+}
+
+.image-container {
+    padding-right: 2rem;
+}
+
+.title-date-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Align children's height */
+    justify-content: space-between;
+}
+
+.desc-container {
+    width: 100%;
+}
+
+.better-lists {
+    list-style-type: disc;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.better-lists-no-bullet {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.page {
+    padding: 1rem;
+}
+
+.gpa {
+    float: right;
+}
+
+@media (max-width: 768px) {
+    /* CSS code for mobile devices */
+    /* Add your mobile-specific styles here */
+    .profile-picture-container {
+        width: 9rem;
+        padding-right: 1rem;
+    }
+    .profile-bio {
+        width: auto;
+        margin-top: 1em;
+    }
+    .profile-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1rem!important;
+    }
+    .college-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .hero-img {
+        background-image: url('profilehero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .profile-hero {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+    }
+    .project-picture-container {
+        width: 10rem;
+    }
+    .project-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .project-container {
+        width: 100%;
+        padding: 2ex;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: center;
+        transition: background-color 0.2s ease-in-out;
+        /* background-color: #f5f5f5; */
+        justify-content: space-evenly
+    }
+
+    .project-disc {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    a { color: inherit; }
+    .subtitle {
+        line-height: calc(1ex / 0.32);
+    }
+    .carousel-container {
+        padding: 3rem 1.5rem;
+    }
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .carousel-item {
+        width: 10rem;
+        margin: 0 .5rem;
+        box-shadow: 0 0 0 0;
+        padding-bottom: 1rem;
+    }
+    .carousel-image {
+        width: 10rem;
+        border-radius: 50%;
+    }
+    .carousel-item:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+    }
+    .carousel-item:not(:hover) {
+        transition: transform 0.2s ease-in-out; 
+        transform: scale(1);
+    }
+    .carousel-title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-tag {
+        padding-top: 1rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-page-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .exp-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+    }
+    .image-container {
+        padding-right: 2rem;
+    }
+    .title-date-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; /* Align children's height */
+        justify-content: space-between;
+    }
+    .desc-container {
+        width: 100%;
+    }
+    .better-lists {
+        list-style-type: disc;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+    .better-lists-no-bullet {
+        list-style-type: none;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+    @media (max-width: 768px) {
+        /* CSS code for mobile devices */
+        /* Add your mobile-specific styles here */
+        /* Example: */
+        body {
+            padding-top: 2rem;
+        }
+        .profile-picture-container {
+            width: 6rem;
+            padding-right: 0.5rem;
+        }
+        .profile-bio {
+            margin-top: 0.5em;
+        }
+        .project-picture-container {
+            width: 10rem;
+            padding-right: 1rem
+        }
+        .project-disc {
+            width: 100%;
+        }
+        .carousel-container {
+            padding: 2rem 1rem;
+        }
+        .carousel-item {
+            width: 8rem;
+            margin: 0 .25rem;
+            padding-bottom: 0.5rem;
+        }
+        .carousel-image {
+            width: 8rem;
+        }
+        .carousel-title {
+            font-size: 2rem;
+        }
+        .carousel-tag {
+            padding-top: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .image-container {
+            padding-right: 1rem;
+        }
+        .better-lists {
+            margin-left: 0.5rem;
+        }
+
+        .profect-page-desc {
+            font-size: medium;
+        }
+
+        .project-page-name {
+            font-size: x-large;
+        }
+
+        .mobile-check {
+            width: 15rem;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .gpa {
+            float: none;
+        }
+    }
+    /* Rest of the CSS code */
+}
+
+/* Rest of the CSS code */
