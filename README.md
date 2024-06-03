@@ -1,8 +1,8 @@
 # PersonalSite
 My Personal Website\
-v0.0.81\
+v0.1.0\
 released 8/16/2022\
-updated 12/15/2023
+updated 6/2/2024
 
 # Pages
 
@@ -17,6 +17,3 @@ About me page has a short biography about me and below has a list of my educatio
 
 # Javascript
 A little amount of javascript is used to allow for mobile devices to use a hamburger menu for the different web pages. Additionally, a JS local storage var is used to remember if a user has removed the "looking for work" banner.
-
-# Disclaimer
-This site is not complete and lacks a formal backend both are in the works.
