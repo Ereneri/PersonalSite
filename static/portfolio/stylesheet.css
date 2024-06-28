@@ -100,7 +100,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 9rem;
+    min-height: 9rem;
 }
 
 a { color: inherit; }
@@ -365,7 +365,7 @@ a { color: inherit; }
             padding-top: 2rem;
         }
         .profile-picture-container {
-            width: 6rem;
+            min-width: 6rem;
             padding-right: 0.5rem;
         }
         .profile-bio {
